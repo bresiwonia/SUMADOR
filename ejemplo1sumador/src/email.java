@@ -1,3 +1,6 @@
+
+import javax.swing.*;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -110,15 +113,23 @@ public class email extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1RegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1RegistrarActionPerformed
-        // TODO add your handling code here:
+        String password = jPasswordField2.getText(); 
+        String email = jtEmail.getText(); 
+        if (email.equals("alumno@ulp.edu.ar") && password.equals("12345678")){
+            JOptionPane.showMessageDialog(this, "Datos correctos!!! Bienvenido!!!");
+          }else {
+           JOptionPane.showMessageDialog(this, "Datos incorrectos!!!");
+        }
+            
     }//GEN-LAST:event_jButton1RegistrarActionPerformed
 
     private void jPasswordField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField2ActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_jPasswordField2ActionPerformed
 
     private void jtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtEmailActionPerformed
-        // TODO add your handling code here:
+
+
     }//GEN-LAST:event_jtEmailActionPerformed
 
     /**
